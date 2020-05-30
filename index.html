@@ -85,6 +85,108 @@
             </div>
         </div>
     </div>
+    <div id="formmodal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve a table</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="radioinput" class="col-12 col-sm-2 col-form-label">Number of guests</label>
+                            <div class="col-12 col-sm offset-sm-2">
+                                <div class="form-check" id="radioinput">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="input1" id="input1" value="1">
+                                        <label for="input1" class="form-check-label">
+                                            <strong>1</strong>
+                                        </label>
+
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="input2" id="input2">
+                                        <label for="input2" class="form-check-label">
+                                            <strong>2</strong>
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="input3" id="input3">
+                                        <label for="input3" class="form-check-label">
+                                            <strong>3</strong>
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="input4" id="input4">
+                                        <label for="input4" class="form-check-label">
+                                            <strong>4</strong>
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="input5" id="input5">
+                                        <label for="input5" class="form-check-label">
+                                            <strong>5</strong>
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="input6" id="input6">
+                                        <label for="input6" class="form-check-label">
+                                            <strong>6</strong>
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-group row">
+                            <label for="grp" class="col-12 col-sm-2 col-form-control">Section</label>
+                            <div class="col-12 col-sm offset-sm-2">
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons" id="grp">
+                                    <label class="btn btn-success active">
+                                       <input type="radio" name="options" id="option1" autocomplete="off" checked>Non-Smoking
+                                   </label>
+                                    <label class="btn btn-danger">
+                                       <input type="radio" name="options" id="option2" autocomplete="off">Smoking
+                                   </label>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="form-group row">
+                            <label for="dandt" class="col-12 col-sm-2 col-form-label">Date and Time</label>
+                            <div class="col-6 col-sm-3 offset-sm-2">
+                                <input class="form-control" type="datetime" name="date" id="dandt" placeholder="Date">
+                            </div>
+                            <div class="col-6 col-sm-3">
+                                <input class="form-control" type="timetime" name="time" placeholder="Time">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-6 col-sm-2 offset-sm-4">
+                                <button type="button" class="btn btn-primary" id="tablereservation">Reserve</button>
+                            </div>
+                            <div class="col-6 col-sm-3">
+
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                    Cancel
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -96,7 +198,7 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a role="button" class="btn btn-block btn-warning btn-sm" data-toggle="tooltip" data-html="true" title="Or call us at <br><strong>+852 12345678</strong>" data-placement="bottom" href="#Form"><strong>Reserve Table</strong></a>
+                    <a role="button" class="btn btn-block btn-warning btn-sm" href="#formmodal" data-toggle="modal"><strong>Reserve Table</strong></a>
                 </div>
             </div>
         </div>
@@ -111,7 +213,7 @@
 
                             <div class="carousel-caption d-none d-md-block">
                                 <h2 class="mt-0">Uthappizza <span class="badge badge-danger"> HOT</span> <span class="badge badge-pill badge-secondary"> $4.99</span></h2>
-                                <div class="d-none d-sm-block">
+                                <div>
                                     <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                                 </div>
                             </div>
@@ -121,7 +223,7 @@
                             <div class="carousel-caption d-none d-md-block">
 
                                 <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger"> NEW</span></h2>
-                                <div class="d-none d-sm-block">
+                                <div>
                                     <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person
                                     </p>
                                 </div>
@@ -134,7 +236,7 @@
                             <div class="carousel-caption d-none d-md-block">
                                 <h2 class="mt-0">Alberto Somayya</h2>
                                 <h4>Executive Chef</h4>
-                                <div class="d-none d-sm-block">
+                                <div>
                                     <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
                                 </div>
                             </div>
@@ -151,6 +253,14 @@
                     <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
+                    <div class="btn-group" id="carouselButtons">
+                        <button class="btn btn-danger btn-sm" id="carousel-pause">
+                            <span class="fa fa-pause"></span>
+                        </button>
+                        <button class="btn btn-danger btn-sm" id="carousel-play">
+                            <span class="fa fa-play"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -212,100 +322,24 @@
 
             </div>
         </div>
-        <div class="row row-content">
-            <div class="col-12 col-sm-8 offset-sm-2">
-                <div class="card" id="Form">
-                    <div class="card-header bg-warning text-white">
-                        <h2>Reserve a Table</h2>
-                    </div>
-                    <div class="card-body">
-                        <form>
-                            <div class="form-group row">
-                                <label for="radioinput" class="col-12 col-sm-2 col-form-label">Number of guests</label>
-                                <div class="col-12 col-sm offset-sm-2">
-                                    <div class="form-check" id="radioinput">
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="input1" id="input1" value="1">
-                                            <label for="input1" class="form-check-label">
-                                                <strong>1</strong>
-                                            </label>
 
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="input2" id="input2">
-                                            <label for="input2" class="form-check-label">
-                                                <strong>2</strong>
-                                            </label>
-                                        </div>
+    </div>
 
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="input3" id="input3">
-                                            <label for="input3" class="form-check-label">
-                                                <strong>3</strong>
-                                            </label>
-                                        </div>
-
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="input4" id="input4">
-                                            <label for="input4" class="form-check-label">
-                                                <strong>4</strong>
-                                            </label>
-                                        </div>
-
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="input5" id="input5">
-                                            <label for="input5" class="form-check-label">
-                                                <strong>5</strong>
-                                            </label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="input6" id="input6">
-                                            <label for="input6" class="form-check-label">
-                                                <strong>6</strong>
-                                            </label>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="form-group row">
-                                <label for="dandt" class="col-12 col-sm-2 col-form-label">Date and Time</label>
-                                <div class="col-6 col-sm-3 offset-sm-2">
-                                    <input class="form-control" type="datetime" name="date" id="dandt" placeholder="Date">
-                                </div>
-                                <div class="col-6 col-sm-3">
-                                    <input class="form-control" type="timetime" name="time" placeholder="Time">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-12 col-sm-2 offset-sm-4">
-                                    <button type="button" class="btn btn-primary" id="tablereservation">Reserve</button>
-                                </div>
-                        </form>
-
-
-                        </div>
-                    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="./contactus.html">Contact</a></li>
+                    </ul>
                 </div>
-            </div>
-        </div>
-
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-4 offset-1 col-sm-2">
-                        <h5>Links</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="./aboutus.html">About</a></li>
-                            <li><a href="#">Menu</a></li>
-                            <li><a href="./contactus.html">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-7 col-sm-5">
-                        <h5>Our Address</h5>
-                        <address>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
 		              121, Clear Water Bay Road<br>
 		              Clear Water Bay, Kowloon<br>
 		              HONG KONG<br>
@@ -313,34 +347,46 @@
 		              <i class="fa fa-fax fa-lg"></i> Fax: +852 8765 4321<br>
 		             <i class="fa fa-envelope fa-lg"></i> <a href="mailto:confusion@food.net">confusion@food.net</a>
 		           </address>
-                    </div>
-                    <div class="col-12 col-sm-4 align-self-center">
-                        <div class="text-center">
-                            <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google fa-lg"></i></a>
-                            <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
-                            <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
-                            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
-                            <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
-                            <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
-                        </div>
-                    </div>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-auto">
-                        <p>© Copyright 2018 Ristorante Con Fusion</p>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script>
-            $(document).ready(function() {
-                $('[data-toggle="tooltip"]').tooltip();
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p>© Copyright 2018 Ristorante Con Fusion</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#mycarousel').carousel({
+                interval: 2000
             });
-        </script>
+            $('#carousel-pause').click(function() {
+                $('#mycarousel').carousel('pause');
+            });
+            $('#carousel-play').click(function() {
+                $('#mycarousel').carousel('cycle');
+            });
+        });
+    </script>
+
+
+
 </body>
 
 </html>
